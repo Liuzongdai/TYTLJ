@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="太铁人员系统" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37z-Ny-k9w">
+                                <rect key="frame" x="154" y="143" width="293" height="314"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Lom-m4-bkj">
+                                        <rect key="frame" x="20" y="20" width="253" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="253" id="7YR-5t-lBA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="1PW-j9-GKX">
+                                        <rect key="frame" x="20" y="110" width="253" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P6-Bw-znM">
+                                        <rect key="frame" x="131" y="187" width="30" height="30"/>
+                                        <state key="normal" title="登录"/>
+                                        <connections>
+                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p4R-Wf-EV2"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KSZ-oA-x4s">
+                                        <rect key="frame" x="134" y="65" width="25" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="top" secondItem="37z-Ny-k9w" secondAttribute="top" constant="20" id="0i2-OE-P4M"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="centerX" secondItem="7P6-Bw-znM" secondAttribute="centerX" id="66N-ec-o60"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lom-m4-bkj" secondAttribute="bottom" constant="187" id="6fb-Nm-fLA"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="centerX" secondItem="1PW-j9-GKX" secondAttribute="centerX" id="9G1-tp-yZk"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="leading" secondItem="1PW-j9-GKX" secondAttribute="leading" id="C7w-dd-Ml1"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="top" secondItem="37z-Ny-k9w" secondAttribute="top" constant="20" id="G5q-O7-u3a"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lom-m4-bkj" secondAttribute="trailing" constant="20" id="LGy-sd-eY5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lom-m4-bkj" secondAttribute="trailing" constant="20" id="Rzn-Co-RWA"/>
+                                    <constraint firstItem="KSZ-oA-x4s" firstAttribute="top" secondItem="Lom-m4-bkj" secondAttribute="bottom" constant="15" id="YmS-3g-wVa"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="centerX" secondItem="KSZ-oA-x4s" secondAttribute="centerX" id="Z1m-Bc-Ca8"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="leading" secondItem="37z-Ny-k9w" secondAttribute="leading" constant="20" id="Zz9-VL-waT"/>
+                                    <constraint firstAttribute="bottom" secondItem="7P6-Bw-znM" secondAttribute="bottom" constant="20" id="cKf-yJ-30V"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="leading" secondItem="37z-Ny-k9w" secondAttribute="leading" constant="20" id="cmd-Om-2Ky"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="trailing" secondItem="1PW-j9-GKX" secondAttribute="trailing" id="ilX-lp-Wed"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="centerX" secondItem="37z-Ny-k9w" secondAttribute="centerX" id="kP6-BT-UJJ"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="leading" secondItem="37z-Ny-k9w" secondAttribute="leading" constant="20" id="sr6-GZ-N4P"/>
+                                    <constraint firstItem="7P6-Bw-znM" firstAttribute="top" secondItem="1PW-j9-GKX" secondAttribute="bottom" constant="47" id="swi-hq-pR6"/>
+                                    <constraint firstItem="Lom-m4-bkj" firstAttribute="top" secondItem="37z-Ny-k9w" secondAttribute="top" constant="20" id="wen-g6-n6d"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="37z-Ny-k9w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pm9-D6-Sr1"/>
+                            <constraint firstItem="37z-Ny-k9w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="iUr-Zr-5jw"/>
+                            <constraint firstItem="37z-Ny-k9w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="piU-Qy-KDP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="37z-Ny-k9w" secondAttribute="bottom" constant="143" id="zbo-wl-VSS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iUr-Zr-5jw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="locationSymbol" destination="KSZ-oA-x4s" id="lbM-Mv-3EL"/>
+                        <outlet property="login" destination="7P6-Bw-znM" id="oxt-CE-Xrq"/>
+                        <outlet property="passWord" destination="1PW-j9-GKX" id="8r7-8n-9Yl"/>
+                        <outlet property="userName" destination="Lom-m4-bkj" id="dQ1-6Q-bye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="273"/>
+        </scene>
+        <!--部门-->
+        <scene sceneID="Fui-BF-q2Y">
+            <objects>
+                <tableViewController id="cVJ-vS-LHR" customClass="DepartmentTableViewController" customModule="太铁人员系统" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Uj-Tr-j4v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="vIN-9D-gSb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="gXI-3w-hDP">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gXI-3w-hDP" id="gu0-xg-KRf">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局职能管理机构" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9n-pl-MUa">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="kGv-4H-rak" kind="push" id="0fk-mP-NUL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="LFS-eg-OOS">
+                                        <rect key="frame" x="0.0" y="142" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LFS-eg-OOS" id="fKG-Vj-AUu">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局限额外机构" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVG-d6-XzE">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="YvS-cm-BYE">
+                                        <rect key="frame" x="0.0" y="220" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YvS-cm-BYE" id="hrr-Aq-1FO">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局附属机构" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgv-oF-ear">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="ig2-kT-Xow">
+                                        <rect key="frame" x="0.0" y="298" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ig2-kT-Xow" id="mxZ-KX-gqt">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局派出机构" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HR9-Jr-bBs" userLabel="太原铁路局派出机构">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="rsw-A7-y0c">
+                                        <rect key="frame" x="0.0" y="376" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rsw-A7-y0c" id="CeD-gm-Urb">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局学协会" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sij-Bw-hlF" userLabel="太原铁路局学协会">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="hIu-cq-Kj8">
+                                        <rect key="frame" x="0.0" y="454" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hIu-cq-Kj8" id="r86-Ig-Byg">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局运输站段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjv-WU-hQq" userLabel="太原铁路局运输站段">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="uv7-0f-dBP">
+                                        <rect key="frame" x="0.0" y="532" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uv7-0f-dBP" id="WOb-gB-5Fo">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局铁路公安局、检察院、法院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTy-4F-Umq" userLabel="太原铁路局铁路公安局、检察院、法院">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="jQF-5m-B1P">
+                                        <rect key="frame" x="0.0" y="610" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jQF-5m-B1P" id="fYk-PY-un2">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局非运输企业" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdf-4Z-fe7">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="A0X-T7-ENI">
+                                        <rect key="frame" x="0.0" y="688" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A0X-T7-ENI" id="6Gt-21-olW">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局其他单位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FT5-Ct-z31" userLabel="太原铁路局派出机构">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="Ngr-UO-2vU">
+                                        <rect key="frame" x="0.0" y="766" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ngr-UO-2vU" id="L2y-7q-DA2">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="管理员单位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiD-s7-bah" userLabel="太原铁路局学协会">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="Awm-dB-dX9">
+                                        <rect key="frame" x="0.0" y="844" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Awm-dB-dX9" id="nIN-xY-CiC">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="部合资公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpP-le-dpo" userLabel="太原铁路局运输站段">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="lUv-gJ-j13">
+                                        <rect key="frame" x="0.0" y="922" width="600" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lUv-gJ-j13" id="cD2-lE-6Li">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局运输辅助单位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyq-Qd-c8q" userLabel="太原铁路局铁路公安局、检察院、法院">
+                                                    <rect key="frame" x="26" y="14" width="317" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="cVJ-vS-LHR" id="YJh-E2-CUk"/>
+                            <outlet property="delegate" destination="cVJ-vS-LHR" id="xFk-gc-ap7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="部门" id="iGi-nC-a5e"/>
+                    <connections>
+                        <outlet property="cell1" destination="gXI-3w-hDP" id="1yC-e5-bvD"/>
+                        <outlet property="cell10" destination="Ngr-UO-2vU" id="Njl-1b-mpw"/>
+                        <outlet property="cell11" destination="Awm-dB-dX9" id="W6h-i0-vvI"/>
+                        <outlet property="cell12" destination="lUv-gJ-j13" id="3YJ-2k-d9J"/>
+                        <outlet property="cell2" destination="LFS-eg-OOS" id="UOQ-b0-fwC"/>
+                        <outlet property="cell3" destination="YvS-cm-BYE" id="8RO-6u-UqX"/>
+                        <outlet property="cell4" destination="ig2-kT-Xow" id="vnm-De-2ro"/>
+                        <outlet property="cell5" destination="rsw-A7-y0c" id="RcA-km-8Kl"/>
+                        <outlet property="cell6" destination="hIu-cq-Kj8" id="gUR-eJ-K9r"/>
+                        <outlet property="cell7" destination="uv7-0f-dBP" id="vMg-jA-bcQ"/>
+                        <outlet property="cell8" destination="jQF-5m-B1P" id="0r8-zq-5fd"/>
+                        <outlet property="cell9" destination="A0X-T7-ENI" id="Tup-PA-Beu"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCS-bO-PUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4187" y="-498"/>
+        </scene>
+        <!--No1 Table View Controller-->
+        <scene sceneID="2mC-Oj-gfK">
+            <objects>
+                <tableViewController id="kGv-4H-rak" customClass="No1TableViewController" customModule="太铁人员系统" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="R4E-se-6OM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="v4X-pL-KfP">
+                                <rect key="frame" x="0.0" y="92" width="600" height="78"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v4X-pL-KfP" id="ch7-au-J6o">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="太原铁路局职能管理机构" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI9-Ls-yMu">
+                                            <rect key="frame" x="22" y="14" width="600" height="49"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kGv-4H-rak" id="DOf-h1-t3Q"/>
+                            <outlet property="delegate" destination="kGv-4H-rak" id="ZBg-DQ-2vo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="QUm-aK-VO1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CU0-7Y-6LY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4875" y="-1835"/>
+        </scene>
+        <!--Other Table View Controller-->
+        <scene sceneID="vQS-9M-oLe">
+            <objects>
+                <tableViewController storyboardIdentifier="other" id="JBz-FM-nMA" customClass="OtherTableViewController" customModule="太铁人员系统" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pju-a8-yN1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="rbh-CB-PhC">
+                                <rect key="frame" x="0.0" y="28" width="600" height="78"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rbh-CB-PhC" id="9NM-ja-guu">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBj-BO-1e5">
+                                            <rect key="frame" x="34" y="27" width="505" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="L9z-x7-YSx" kind="push" id="6jP-NF-MKB"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell2" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell2" rowHeight="78" id="YNg-lX-fKK">
+                                <rect key="frame" x="0.0" y="106" width="600" height="78"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YNg-lX-fKK" id="M9s-N5-3RO">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="77"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXH-cd-tJn">
+                                            <rect key="frame" x="34" y="28" width="337" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JBz-FM-nMA" id="eLt-rG-skr"/>
+                            <outlet property="delegate" destination="JBz-FM-nMA" id="bDa-TS-pkG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMa-Ps-ezN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4875" y="-1142"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="5Hi-gl-Wcq">
+            <objects>
+                <tableViewController storyboardIdentifier="No1_" id="s0i-Eb-YMC" customClass="JYTableViewController" customModule="太铁人员系统" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" id="r8H-Nb-gLL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="LoG-lJ-3ER">
+                                <rect key="frame" x="0.0" y="28" width="600" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LoG-lJ-3ER" id="fgN-fs-E1A">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="三晋计量行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLv-5s-X8r">
+                                            <rect key="frame" x="35" y="14" width="184" height="48"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="s0i-Eb-YMC" id="bz6-NM-bQp"/>
+                            <outlet property="delegate" destination="s0i-Eb-YMC" id="W9q-ft-t6G"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RWW-il-Dw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5558" y="-1534"/>
+        </scene>
+        <!--Zi Table View Controller-->
+        <scene sceneID="zAD-9A-tM1">
+            <objects>
+                <tableViewController storyboardIdentifier="Zi" id="xH0-fe-rhx" customClass="ZiTableViewController" customModule="太铁人员系统" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sgt-EY-WHf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="78" id="fQF-0G-K7i">
+                                <rect key="frame" x="0.0" y="28" width="600" height="78"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fQF-0G-K7i" id="JaZ-MZ-pCq">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHD-X8-Rae">
+                                            <rect key="frame" x="19" y="28" width="250" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xH0-fe-rhx" id="NB2-6l-GjJ"/>
+                            <outlet property="delegate" destination="xH0-fe-rhx" id="L5q-3A-Xp9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="aCH-dv-zWD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3p-gI-f8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5553" y="-909"/>
+        </scene>
+        <!--基本信息-->
+        <scene sceneID="cHE-17-92P">
+            <objects>
+                <viewController id="hzd-hR-JRF" customClass="BiscInfoViewController" customModule="太铁人员系统" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XY3-KE-8o2"/>
+                        <viewControllerLayoutGuide type="bottom" id="O7d-oq-DvJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AD8-33-N1q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="基本信息" selectedImage="staff" id="l5f-5D-nR9"/>
+                    <navigationItem key="navigationItem" id="t4q-9z-hmR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fcd-uJ-VmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7368" y="-1040"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="SKU-VT-3Ba">
+            <objects>
+                <viewController id="oDn-pb-XuG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Hm-s0-VnN"/>
+                        <viewControllerLayoutGuide type="bottom" id="7WY-aT-vh1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aqP-AC-nX6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="BBJ-7N-reT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZu-iR-Jot" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7520" y="251"/>
+        </scene>
+        <!--菜单-->
+        <scene sceneID="SP8-KS-Dcw">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="9qX-VI-QlN" customClass="FuncTableViewController" customModule="太铁人员系统" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="veM-jI-W3g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.35244645991574242" green="0.24387528530407182" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="3pv-ey-GaT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="127" id="pVq-eU-loA">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="127"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pVq-eU-loA" id="kp2-Q2-uyG">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="126"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="人员查看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9W-cN-7XY">
+                                                    <rect key="frame" x="112" y="30" width="262" height="66"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="staff" translatesAutoresizingMaskIntoConstraints="NO" id="mCK-HI-dgJ">
+                                                    <rect key="frame" x="32" y="38" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.74901960784313726" green="0.87058823529411766" blue="0.80392156862745101" alpha="0.0" colorSpace="deviceRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="dgT-tV-oxr" kind="showDetail" id="tIz-cc-QnD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="153" id="DX4-IU-EfM">
+                                        <rect key="frame" x="0.0" y="191" width="600" height="153"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DX4-IU-EfM" id="q5L-vk-cfd">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="人员筛选" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEF-O4-iru">
+                                                    <rect key="frame" x="112" y="43" width="262" height="66"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="fFP-aN-yqY">
+                                                    <rect key="frame" x="32" y="54" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.74901960784313726" green="0.87058823529411766" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="TaZ-Fb-yfA" kind="showDetail" id="IAM-ZA-8Uf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="159" id="YZ3-jg-jVi">
+                                        <rect key="frame" x="0.0" y="344" width="600" height="159"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YZ3-jg-jVi" id="3or-dq-tOo">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="158"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="人员统计" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqW-gQ-5Bp">
+                                                    <rect key="frame" x="112" y="46" width="262" height="66"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="statistics" translatesAutoresizingMaskIntoConstraints="NO" id="o17-Iw-VeY">
+                                                    <rect key="frame" x="32" y="54" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="deviceRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="159" id="Ihk-SP-yB6">
+                                        <rect key="frame" x="0.0" y="503" width="600" height="159"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ihk-SP-yB6" id="A5D-Sr-tXZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="158"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="数据同步" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAA-W3-Upf">
+                                                    <rect key="frame" x="112" y="46" width="262" height="66"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="update" translatesAutoresizingMaskIntoConstraints="NO" id="Ejc-JQ-qy4">
+                                                    <rect key="frame" x="32" y="54" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="9qX-VI-QlN" id="wz7-75-Bl0"/>
+                            <outlet property="delegate" destination="9qX-VI-QlN" id="104-v8-5HF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="菜单" id="Xtf-Qe-U7G"/>
+                    <connections>
+                        <outlet property="cell1" destination="pVq-eU-loA" id="gby-p6-RDq"/>
+                        <outlet property="cell2" destination="DX4-IU-EfM" id="qYg-1h-I4l"/>
+                        <outlet property="cell3" destination="YZ3-jg-jVi" id="cXh-RZ-PGf"/>
+                        <outlet property="cell4" destination="Ihk-SP-yB6" id="5h1-mF-GUc"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CxA-h4-Rb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2509" y="273"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rZJ-hf-vok">
+            <objects>
+                <navigationController id="fFV-cg-6bR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uRc-1k-6un">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9qX-VI-QlN" kind="relationship" relationship="rootViewController" id="avL-h9-YoR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oe5-BJ-3PM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="273"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="VA5-R8-6hG">
+            <objects>
+                <splitViewController storyboardIdentifier="nav" modalTransitionStyle="crossDissolve" id="vdV-G1-18H" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="fFV-cg-6bR" kind="relationship" relationship="masterViewController" id="2xe-8g-hEZ"/>
+                        <segue destination="dgT-tV-oxr" kind="relationship" relationship="detailViewController" id="XfK-VW-cz5"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UnB-1l-dpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="273"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OT7-fc-uCc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dgT-tV-oxr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6ye-pE-gXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cVJ-vS-LHR" kind="relationship" relationship="rootViewController" id="1lD-wY-nsX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaA-fD-e2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3375" y="-498"/>
+        </scene>
+        <!--Select View Controller-->
+        <scene sceneID="ncE-cJ-GHE">
+            <objects>
+                <viewController id="7XH-Sj-DmR" customClass="SelectViewController" customModule="太铁人员系统" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vBK-pf-jbd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xw8-LZ-GGv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BtI-nS-CkP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yqz-nI-1gk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bw-aS-5mK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4053" y="282"/>
+        </scene>
+        <!--Staff Table View Controller-->
+        <scene sceneID="JZN-Nk-t8S">
+            <objects>
+                <tableViewController storyboardIdentifier="staff" id="L9z-x7-YSx" customClass="StaffTableViewController" customModule="太铁人员系统" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iIP-zF-glO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="60" id="QDb-3e-aev">
+                                <rect key="frame" x="0.0" y="28" width="600" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QDb-3e-aev" id="1bj-kW-XAK">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbb-2J-qFr">
+                                            <rect key="frame" x="106" y="19" width="210" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="102" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ew7-yf-OAR">
+                                            <rect key="frame" x="33" y="5" width="50" height="50"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="IGN-bm-k4E" kind="push" id="YeC-XY-0Kw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="L9z-x7-YSx" id="Se1-88-dxa"/>
+                            <outlet property="delegate" destination="L9z-x7-YSx" id="kz6-84-4bX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="SrH-6X-M1I"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2oj-Ml-Rvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5903" y="-316"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="QJN-JW-Isc">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IGN-bm-k4E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="eIQ-e8-Fqo"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="av3-NN-feJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hzd-hR-JRF" kind="relationship" relationship="viewControllers" id="F12-Pp-MfI"/>
+                        <segue destination="oDn-pb-XuG" kind="relationship" relationship="viewControllers" id="8Kp-kb-dlE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4O-kd-spu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6572" y="-322"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aYO-Qw-NCM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TaZ-Fb-yfA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6yG-mN-G7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7XH-Sj-DmR" kind="relationship" relationship="rootViewController" id="LSO-Mi-GuD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6mN-E3-HVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3277" y="273"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="search" width="50" height="50"/>
+        <image name="staff" width="50" height="47"/>
+        <image name="statistics" width="50" height="58"/>
+        <image name="update" width="50" height="50"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tIz-cc-QnD"/>
+    </inferredMetricsTieBreakers>
+</document>
